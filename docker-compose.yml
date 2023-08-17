@@ -5,11 +5,11 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: 1234
     ports:
-      - "33302:3306"
+      - "33068:3306"
   phpmyadmin:
     image: phpmyadmin
     container_name: mysql-fe-mcam-1
     environment:
       PMA_ARBITRARY: 1
     ports:
-      - "33301:80"
+      - "33069:80"

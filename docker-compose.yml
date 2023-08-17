@@ -1,0 +1,13 @@
+services:
+  database:
+    image: mysql
+    container_name: mysql-db-mcam-1
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: mysql-fe-mcam-1
+    environment:
+      PMA_ARBITRARY: 1
+    ports:
+      - "33301:80"
